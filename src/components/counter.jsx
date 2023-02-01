@@ -15,20 +15,20 @@ class Counter extends React.Component {
   // Change code below this line
   increment() {
     this.setState(state => ({
-    count: state.count + 1
-  }));
+      count: state.count + 1
+    }));
   }
-  
+
   decrement() {
     this.setState(state => ({
-    count: state.count - 1
-  }));
+      count: state.count - 1
+    }));
   }
-  
-  reset(){
+
+  reset() {
     this.setState(state => ({
-    count: 0
-  }));
+      count: 0
+    }));
   }
   // Change code above this line
   render() {
