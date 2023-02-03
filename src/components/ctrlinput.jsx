@@ -31,3 +31,26 @@ class ControlledInput extends React.Component {
 };
 
 export default ControlledInput;
+  
+
+
+export const FunctionalInput = (props) => {
+
+  function handleChange(e) {
+    props.setState({
+      input: e.target.value
+    });
+  }
+
+  return (
+      <div>
+        <input
+          placeholder="Type something..."
+          value={props.input}
+          onChange={handleChange}
+        />
+        <h4>Controlled Input:</h4>
+        <p>{props.input}</p>
+      </div>
+    );
+}

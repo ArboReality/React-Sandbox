@@ -1,5 +1,46 @@
 main {
-/*   text-align: center;
-  vertical-align: center;
-  line-height: 100vh */
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "CB CI CFI"
+    "CB TV TV"
+    "CF CFF ."
+  ;
+}
+
+/* MyApp with Callback props */
+main>:first-child {
+  background-color: lightblue;
+  grid-area: "CB";
+}
+
+/* My controlled input */
+main>:nth-child(2) {
+  background-color: lightblue;
+  grid-area: "CI";
+}
+
+/* My functional controlled input */
+main>:nth-child(3) {
+  background-color: lightblue;
+  grid-area: "CFI";
+}
+
+/* Mycomponent toggle visibility */
+main>:nth-child(4) {
+  background-color: lightblue;
+  grid-area: "TV";
+}
+
+/* My form */
+main>:nth-child(5) {
+  background-color: lightblue;
+  grid-area: "CF";
+}
+
+
+/* My functional form */
+main>:nth-child(6) {
+  background-color: lightblue;
+  grid-area: "CFF";
 }
