@@ -45,3 +45,35 @@ class Counter extends React.Component {
 
 
 export default Counter;
+
+
+
+export const FunctionalCounter = (props) => {
+
+  function increment() {
+    props.setState(state => ({
+      count: state.count + 1
+    }));
+  }
+
+  function decrement() {
+    props.setState(state => ({
+      count: state.count - 1
+    }));
+  }
+
+  function reset() {
+    props.setState(state => ({
+      count: 0
+    }));
+  }
+
+  return (
+    <div>
+      <button className='inc' onClick={ increment}>Increment!</button>
+     <button className='dec' onClick={decrement}>Decrement!</button>
+        <button className='reset' onClick={reset}>Reset</button>
+        <h1>Current F Count: {props.count}</h1>
+      </div>
+    );
+}
