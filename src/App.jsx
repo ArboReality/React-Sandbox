@@ -7,11 +7,13 @@ import Controller from './components/lifecycles'
 import OnlyEvens from './components/lifecycles'
 import MagicEightBall from './components/eightball'
 import MyCondition from './components/conditionalrender'
+import GameOfChance from './components/conditionalprops'
 
 import FunctionalInput from './components/ctrlinput'
 import FunctionalForm from './components/ctrlform'
 import MyApp from './components/callbackprops'
 import FunctionalCounter from './components/counter';
+import CheckUserAge from './components/ternaries'
 
 const styles = {
   backgroundColor: "slategrey",
@@ -37,6 +39,10 @@ export default function App() {
       </Controller>
       <MagicEightBall />
       <MyCondition />
+
+
+      < CheckUserAge />
+      < GameOfChance />
     </main>
   )
 }
